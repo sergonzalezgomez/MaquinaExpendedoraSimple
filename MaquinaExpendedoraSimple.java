@@ -10,12 +10,10 @@ public class MaquinaExpendedoraSimple {
     private String estacionOrigen;
     // El destino del billete
     private String estacionDestino;
-   
-    
-   
-    
-  
-    
+ 
+    public int getTotalDineroAcumulado() {
+       return totalDineroAcumulado;    
+     }
    
 
     /**
@@ -23,10 +21,10 @@ public class MaquinaExpendedoraSimple {
      * precio del billete y el origen y destino dados. Se asume que el precio
      * del billete que se recibe es mayor que 0.
      */
-    public MaquinaExpendedoraSimple(int costeBillete, String destino  ) {
+    public MaquinaExpendedoraSimple(int costeBillete, String destino) {
         precioBillete = costeBillete ;
         balanceClienteActual = 0;
-        totalDineroAcumulado = 0;
+        totalDineroAcumulado = 0 ;
         estacionOrigen = "leon" ;
         estacionDestino = destino ;
     }

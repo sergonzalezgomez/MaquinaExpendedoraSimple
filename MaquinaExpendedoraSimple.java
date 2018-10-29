@@ -10,7 +10,16 @@ public class MaquinaExpendedoraSimple {
     private String estacionOrigen;
     // El destino del billete
     private String estacionDestino;
- 
+    private int reduccionBillete;
+    private int costeBillete;
+    private int vaciarDepositoDinerpo;
+    private int vaciarDeposito;
+    
+   
+   
+    public void reduccionPrecioBillete(int reduccionPrecio){
+        precioBillete = precioBillete - reduccionPrecio ;
+    }
    
     public void precioBillete(int costeBillete) {
        precioBillete = costeBillete;
@@ -32,8 +41,7 @@ public class MaquinaExpendedoraSimple {
     public int getTotalDineroAcumulado() {
        return totalDineroAcumulado;    
      }
-   
-     
+  
     /**
      * Devuelve el precio del billete
      */

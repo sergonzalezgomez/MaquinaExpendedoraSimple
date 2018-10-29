@@ -15,7 +15,10 @@ public class MaquinaExpendedoraSimple {
     private int vaciarDepositoDinerpo;
     private int vaciarDeposito;
     
-   
+     public int vaciarDepositoDinero() {
+       return vaciarDeposito ;
+    }
+    
    
     public void reduccionPrecioBillete(int reduccionPrecio){
         precioBillete = precioBillete - reduccionPrecio ;
